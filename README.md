@@ -202,7 +202,7 @@ a UI needs to say something useful.
 
 ## Running it
 
-Requires Python 3.12 or newer.
+Requires Python 3.12 or newer, for `StrEnum`, `Self` and PEP 604 unions.
 
 ```bash
 git clone https://github.com/ivanfernandezgarcia/fastapi-hexagonal-architecture
@@ -210,7 +210,16 @@ cd fastapi-hexagonal-architecture
 
 python3 -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
+
+python -c "import sys; print(sys.version)"   # confirm you are on 3.12+
 ```
+
+That last line is worth running. If your shell opens with a conda `base`
+environment active, `python` may still resolve to conda's interpreter even after
+`source .venv/bin/activate`, and an older one will fail on `StrEnum`. The package
+raises a `RuntimeError` naming the interpreter and the fix rather than letting a
+cryptic `ImportError` surface from inside the domain. Calling
+`.venv/bin/python` directly always works.
 
 **The demonstration.** One use case, three wirings, no mocks:
 
