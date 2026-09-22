@@ -1,5 +1,9 @@
 # Hexagonal Architecture in Python
 
+[![CI](https://github.com/ivanfdz/fastapi-hexagonal-architecture/actions/workflows/ci.yml/badge.svg)](https://github.com/ivanfdz/fastapi-hexagonal-architecture/actions/workflows/ci.yml)
+[![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 A book lending service, small enough to read in one sitting and complete enough to
 run, built as a hexagon. The business rules live in plain Python classes that
 import nothing but the standard library. FastAPI is a driving adapter bolted onto
