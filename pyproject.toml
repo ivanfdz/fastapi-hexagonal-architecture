@@ -9,7 +9,7 @@ description = "A runnable hexagonal architecture example in Python: a book lendi
 readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "MIT" }
-authors = [{ name = "Ivan Fernandez Garcia" }]
+authors = [{ name = "Ivan Fernandez García" }]
 keywords = [
     "hexagonal-architecture",
     "ports-and-adapters",
@@ -46,7 +46,7 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/ivanfernandezgarcia/fastapi-hexagonal-architecture"
+Homepage = "https://github.com/ivanfdz/fastapi-hexagonal-architecture"
 
 [tool.setuptools.packages.find]
 where = ["src"]

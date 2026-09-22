@@ -205,7 +205,7 @@ a UI needs to say something useful.
 Requires Python 3.12 or newer, for `StrEnum`, `Self` and PEP 604 unions.
 
 ```bash
-git clone https://github.com/ivanfernandezgarcia/fastapi-hexagonal-architecture
+git clone https://github.com/ivanfdz/fastapi-hexagonal-architecture
 cd fastapi-hexagonal-architecture
 
 python3 -m venv .venv && source .venv/bin/activate
