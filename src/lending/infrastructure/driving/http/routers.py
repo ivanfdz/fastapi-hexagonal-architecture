@@ -16,7 +16,6 @@ from __future__ import annotations
 from fastapi import APIRouter, Path, Query, status
 
 from lending.application.dto import BorrowBookCommand, ListMemberLoansQuery, ReturnBookCommand
-from lending.infrastructure.driving.http.errors import HTTP_422_UNPROCESSABLE
 from lending.infrastructure.driving.http.dependencies import (
     BorrowBookDep,
     ContainerDep,
@@ -24,6 +23,7 @@ from lending.infrastructure.driving.http.dependencies import (
     ListMemberLoansDep,
     ReturnBookDep,
 )
+from lending.infrastructure.driving.http.errors import HTTP_422_UNPROCESSABLE
 from lending.infrastructure.driving.http.schemas import (
     BookResponse,
     BorrowBookRequest,
